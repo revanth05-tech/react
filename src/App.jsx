@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from './component/card';
+import Navbar from './component/navbar';
 
 const App = () => {
-  const name = 'Revanth'
   return (
     <div>
       <Card />
-      <h1>Hello, {name}!</h1>
+      <Navbar />
     </div>
   )
 }
