@@ -5,10 +5,9 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f0f2f5;
+  background-color: skyblue;
   justify-content: center;
   align-items: center;
 }
@@ -43,4 +42,4 @@ html, body, #root {
 }
 .btn:active{
   background-color: #003f7f;
-}
+} 
