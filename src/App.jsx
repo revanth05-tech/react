@@ -1,13 +1,14 @@
 import React from 'react';
 import Card from './component/card';
 import Navbar from './component/navbar';
-import './App.css'; // your external CSS file
+import './App.css';
+import naruto from './images/naruto.avif'; // ✅ Import the image
 
 const App = () => {
   return (
     <div className='parent'>
       <div className="card">
-        <img class='img_card' src='C:\Users\osait\Desktop\react\images\naruto.avif'></img>
+        <img className='img_card' src={naruto} alt="Naruto" />
         <h1>Hello World</h1>
         <button className="btn">
           Click Me
