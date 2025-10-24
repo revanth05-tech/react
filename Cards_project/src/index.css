@@ -1,68 +1,114 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Avenir', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(153, 220, 247, 0.916);
+  padding: 20px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.card {
+  height: 220px;
+  width: 280px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: #333;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* keeps logo left, button right */
+  align-items: center;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+.logo {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  object-fit: cover;
+  transition: all 0.9s ease;
+  padding: 2px;
+}
+.logo:hover {
+  transform: scale(1.1) rotate(360deg);
+  box-shadow: 0 0 15px rgba(14, 170, 232, 0.916);
+}
+.btn {
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: all 0.7s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(14, 170, 232, 0.916);
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+ display: flex;
+ flex-direction: column;
+ padding: 15px;
+  align-items: flex-start;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+}
+.title:hover{
+  color: #0eaae8;
+  transform: scale(1.03);
+}
+.role{
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
