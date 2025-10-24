@@ -21,11 +21,14 @@ const App = () => {
           <div className='content'>
             <a
               href="https://www.google.com/about/careers/applications/jobs/results/116498926541906630-senior-ux-designer/"
-              className='title'
-            >
+              className='title'>
               Google
             </a>
             <h2 className='role'>Senior UI/UX Designer</h2>
+            <div className="btn_001">
+              <button className='btn_01'>Part Time</button>
+              <button className='btn_02'>Senior Level</button>
+            </div>
           </div>
         </div>
         <div className='center'></div>

@@ -112,3 +112,33 @@ html, body {
   margin-bottom: 5px;
   margin-left: 5px;
 }
+.btn_001{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.btn_01, .btn_02{
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: all 0.7s ease;
+}
+.btn_01{
+  background-color: #e0f3ff;
+  color: #0eaae8;
+}
+.btn_01:hover{
+  transform: scale(1.05);   
+  box-shadow: 0 0 10px rgba(14, 170, 232, 0.916);
+}
+.btn_02{
+  background-color: #f0e6ff;
+  color: #8a2be2;
+}
+.btn_02:hover{
+  transform: scale(1.05);   
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.916);
+}
