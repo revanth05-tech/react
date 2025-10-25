@@ -142,3 +142,13 @@ html, body {
   transform: scale(1.05);   
   box-shadow: 0 0 10px rgba(138, 43, 226, 0.916);
 }
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #f9f9f9;
+}

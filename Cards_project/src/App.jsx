@@ -30,6 +30,10 @@ const App = () => {
               <button className='btn_02'>Senior Level</button>
             </div>
           </div>
+          <footer className='footer'>
+            <span className='location'>Mountain View, CA</span>
+            <span className='date'>2 days ago</span>
+          </footer>
         </div>
         <div className='center'></div>
       </div>
