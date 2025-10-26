@@ -4,6 +4,49 @@ import { Bookmark } from 'lucide-react'
 const App = () => {
   return (
     <div className='parent'>
+      <div className='paper'>
+      <nav className='topnav'>
+        <h1 className='heading'>Job Listings</h1>
+        <button className='explorebtn'>Explore More</button>
+      </nav>
+
+     <div className='cards_container'>
+         {/* card 1 */}
+         <div className='card'>
+        <div className='google'>
+          <div className='navbar'>
+            <a href="https://www.google.com/">
+              <img
+                className='logo'
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                alt="Google Logo"
+              />
+            </a>
+            <button className='btn'>
+              Save <Bookmark size={18} style={{ marginLeft: '6px' }} />
+            </button>
+          </div>
+          <div className='content'>
+            <a
+              href="https://www.google.com/about/careers/applications/jobs/results/116498926541906630-senior-ux-designer/"
+              className='title'>
+              Google
+            </a>
+            <h2 className='role'>Senior UI/UX Designer</h2>
+            <div className="btn_001">
+              <button className='btn_01'>Part Time</button>
+              <button className='btn_02'>Senior Level</button>
+            </div>
+          </div>
+          <footer className='footer'>
+            <span className='location'>Mountain View, CA</span>
+            <span className='date'>2 days ago</span>
+          </footer>
+        </div>
+        <div className='center'></div>
+      </div>
+
+      {/* card 2 */}
       <div className='card'>
         <div className='google'>
           <div className='navbar'>
@@ -36,6 +79,77 @@ const App = () => {
           </footer>
         </div>
         <div className='center'></div>
+      </div>
+      {/* card 3 */} 
+      <div className='card'>
+        <div className='google'>
+          <div className='navbar'>
+            <a href="https://www.google.com/">
+              <img
+                className='logo'
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                alt="Google Logo"
+              />
+            </a>
+            <button className='btn'>
+              Save <Bookmark size={18} style={{ marginLeft: '6px' }} />
+            </button>
+          </div>
+          <div className='content'>
+            <a
+              href="https://www.google.com/about/careers/applications/jobs/results/116498926541906630-senior-ux-designer/"
+              className='title'>
+              Google
+            </a>
+            <h2 className='role'>Senior UI/UX Designer</h2>
+            <div className="btn_001">
+              <button className='btn_01'>Part Time</button>
+              <button className='btn_02'>Senior Level</button>
+            </div>
+          </div>
+          <footer className='footer'>
+            <span className='location'>Mountain View, CA</span>
+            <span className='date'>2 days ago</span>
+          </footer>
+        </div>
+        <div className='center'></div>
+      </div>
+       {/* card 4 */}
+      <div className='card'>
+        <div className='google'>
+          <div className='navbar'>
+            <a href="https://www.google.com/">
+              <img
+                className='logo'
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                alt="Google Logo"
+              />
+            </a>
+            <button className='btn'>
+              Save <Bookmark size={18} style={{ marginLeft: '6px' }} />
+            </button>
+          </div>
+          <div className='content'>
+            <a
+              href="https://www.google.com/about/careers/applications/jobs/results/116498926541906630-senior-ux-designer/"
+              className='title'>
+              Google
+            </a>
+            <h2 className='role'>Senior UI/UX Designer</h2>
+            <div className="btn_001">
+              <button className='btn_01'>Part Time</button>
+              <button className='btn_02'>Senior Level</button>
+            </div>
+          </div>
+          <footer className='footer'>
+            <span className='location'>Mountain View, CA</span>
+            <span className='date'>2 days ago</span>
+          </footer>
+        </div>
+        <div className='center'></div>
+      </div>
+     </div>
+
       </div>
     </div>
   )
