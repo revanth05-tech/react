@@ -185,6 +185,7 @@ html, body {
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
   transition: all 0.7s ease;
+  text-decoration: none;
 }
 .btn_01 {
   background-color: #e0f3ff;
