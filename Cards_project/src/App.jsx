@@ -80,14 +80,15 @@ const App = () => {
         </div>
         <div className='center'></div>
       </div>
+      
       {/* card 3 */} 
       <div className='card'>
-        <div className='google'>
+        <div className='Nvidia'>
           <div className='navbar'>
-            <a href="https://www.google.com/">
+            <a href="https://www.nvidia.com/en-in/">
               <img
                 className='logo'
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                src="data:image/png;base64,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"
                 alt="Google Logo"
               />
             </a>
@@ -97,14 +98,14 @@ const App = () => {
           </div>
           <div className='content'>
             <a
-              href="https://www.google.com/about/careers/applications/jobs/results/116498926541906630-senior-ux-designer/"
+              href="https://www.nvidia.com/en-in/about-nvidia/careers/"
               className='title'>
-              Google
+              Nvidia
             </a>
-            <h2 className='role'>Senior UI/UX Designer</h2>
+            <h2 className='role'>Find Fun</h2>
             <div className="btn_001">
-              <button className='btn_01'>Part Time</button>
-              <button className='btn_02'>Senior Level</button>
+              <a href="https://www.nvidia.com/en-in/about-nvidia/careers/" className='btn_01'>Jobs</a>
+              <a href="https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/" className='btn_02'>Inturnships</a>
             </div>
           </div>
           <footer className='footer'>
