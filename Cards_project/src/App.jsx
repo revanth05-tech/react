@@ -138,7 +138,7 @@ const App = () => {
             </a>
             <h2 className='role'>Senior UI/UX Designer</h2>
             <div className="btn_001">
-              <button className='btn_01'>Part Time</button>
+              <button className='btn_01'>Internship</button>
               <button className='btn_02'>Senior Level</button>
             </div>
           </div>
