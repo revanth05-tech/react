@@ -19,14 +19,15 @@ html, body, #root {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 
 /* Card Styling */
 .card {
   background-color: #fff;
   color: #000;
-  width: 320px;
-  height: 420px;
+  width: 350px;
+  height: 350px;
   border-radius: 20px;
   overflow: hidden;
   padding: 24px;

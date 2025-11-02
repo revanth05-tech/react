@@ -4,9 +4,12 @@ import Card from './components/card.jsx';
 
 const App = () => {
   return (
-    <div>
+    <div className='parent'>
       <Card />
+       <Card />
+        <Card />
     </div>
+    
   );
 };
 

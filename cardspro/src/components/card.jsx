@@ -3,7 +3,7 @@ import React from 'react'
 const card = () => {
   return (
     <div>
-    <div className="parent">
+          <div className="parent">
       <article className="card">
 
         {/* Top Section */}
