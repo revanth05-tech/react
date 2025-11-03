@@ -1,4 +1,4 @@
-/* Reset + Base setup */
+/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
@@ -6,139 +6,129 @@
   font-family: "Poppins", sans-serif;
 }
 
-html, body, #root {
-  height: 100%;
-  width: 100%;
-}
-
-.parent {
-  height: 100vh;
-  width: 100%;
-  background-color: #000;
+body {
+  background-color: #0f0f0f;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
 }
 
-/* Card Styling */
+/* Parent container for all cards */
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual card styling */
 .card {
-  background-color: #fff;
-  color: #000;
-  width: 350px;
-  height: 350px;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 24px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ---------- TOP ---------- */
-.card .top {
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+/* Top section */
+.top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #333;
 }
 
 .top img {
-  height: 36px;
-  width: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px solid #dadada;
-  padding: 2px;
 }
 
 .top button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #dadada;
-  padding: 5px 10px;
-  font-size: 12px;
-  background: transparent;
-  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  font-size: 14px;
 }
 
 .top button:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #0056b3;
 }
 
-/* ---------- CENTER ---------- */
+/* Center section */
 .center {
-  margin-top: 15px;
-  flex-grow: 1;
+  padding: 15px;
 }
 
 .center h3 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #555;
+  font-size: 16px;
+  color: #aaa;
 }
 
 .center h3 span {
   font-size: 12px;
-  font-weight: 400;
-  color: #888;
-  margin-left: 6px;
+  color: #666;
+  margin-left: 8px;
 }
 
 .center h2 {
   font-size: 18px;
-  font-weight: 600;
-  margin: 10px 0;
+  margin: 5px 0 10px 0;
 }
 
 .details {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 .details h4 {
-  background-color: #f1f1f1;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-size: 12px;
-  color: #444;
+  font-size: 14px;
+  color: #999;
 }
 
-/* ---------- BOTTOM ---------- */
+/* Bottom section */
 .bottom {
+  padding: 15px;
+  border-top: 1px solid #333;
+}
+
+.info {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #dadada;
-  padding-top: 12px;
-  margin-top: 12px;
+  align-items: center;
 }
 
-.info h3 {
+.info div h3 {
   font-size: 16px;
-  font-weight: 600;
-}
-
-.info p {
-  font-size: 12px;
-  color: #555;
-}
-
-.bottom button {
-  background-color: #000;
   color: #fff;
-  padding: 8px 18px;
-  border-radius: 10px;
-  border: none;
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
-.bottom button:hover {
-  background-color: #222;
+.info div p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.info button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.info button:hover {
+  background-color: #1e7e34;
 }
