@@ -60,7 +60,7 @@ const jobopenings =  [
   return (
     <div className='parent'>
       {jobopenings.map(function(elem){
-        return <Card company={elem.company} post={elem.posted} role={elem.role}/>
+        return <Card company={elem.company} post={elem.posted} role={elem.role} type={elem.type} level={elem.level}  salary={elem.salary} location={elem.location}/>
       })}
     </div>
   );

@@ -21,8 +21,8 @@ const card = (props) => {
           <h3>{props.company} <span>{props.post}</span></h3>
           <h2>{props.role}</h2>
           <div className="details">
-            <h4>Part time</h4>
-            <h4>Senior level</h4>
+            <h4>{props.type}</h4>
+            <h4>{props.level}</h4>
           </div>
         </section>
 
@@ -30,8 +30,8 @@ const card = (props) => {
         <footer className="bottom">
           <div className="info">
             <div>
-              <h3>$12/hr</h3>
-              <p>Mumbai</p>
+              <h3>{props.salary}</h3>
+              <p>{props.location}</p>
             </div>
             <button>Apply</button>
           </div>
