@@ -59,8 +59,8 @@ const jobopenings =  [
 
   return (
     <div className='parent'>
-      {jobopenings.map(function(elem){
-        return <Card key={elem.id} {...elem} />;
+      {jobopenings.map(function(){
+        return <Card />
       })}
     </div>
   );
