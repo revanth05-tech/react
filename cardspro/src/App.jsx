@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './components/card.jsx';
-import User from './components/user.jsx';
+
 
 const App = () => {
 const jobopenings =  [
@@ -59,8 +59,8 @@ const jobopenings =  [
 
   return (
     <div className='parent'>
-      {jobopenings.map(function(){
-        return <Card />
+      {jobopenings.map(function(elem){
+        return <Card company={elem.company} />
       })}
     </div>
   );
