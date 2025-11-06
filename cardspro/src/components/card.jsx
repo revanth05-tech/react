@@ -1,6 +1,6 @@
 import React from 'react'
 
-const card = () => {
+const card = (props) => {
 
   return (
     <div>
@@ -18,7 +18,7 @@ const card = () => {
 
         {/* Center Section */}
         <section className="center">
-          <h3>Amazon <span>5 days ago</span></h3>
+          <h3>{props.company} <span>{props.post}</span></h3>
           <h2>Senior UI/UX Designer</h2>
           <div className="details">
             <h4>Part time</h4>
