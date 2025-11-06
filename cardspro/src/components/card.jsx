@@ -19,7 +19,7 @@ const card = (props) => {
         {/* Center Section */}
         <section className="center">
           <h3>{props.company} <span>{props.post}</span></h3>
-          <h2>Senior UI/UX Designer</h2>
+          <h2>{props.role}</h2>
           <div className="details">
             <h4>Part time</h4>
             <h4>Senior level</h4>
