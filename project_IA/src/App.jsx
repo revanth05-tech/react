@@ -1,11 +1,7 @@
 import React from 'react'
-
+import Index from '../components/index.jsx'
 const App = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <Index />
 }
 
 export default App
