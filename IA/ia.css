@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0a2540, #114b5f, #0d3b66);
+  color: #e6edf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.ocean, .clouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.ocean {
+  background: linear-gradient(to bottom, #001f3f 0%, #003366 40%, #005f73 100%);
+  animation: oceanWave 20s ease-in-out infinite alternate;
+  filter: brightness(0.9);
+}
+
+@keyframes oceanWave {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 40px; }
+}
+
+.clouds {
+  background: url("https://www.transparenttextures.com/patterns/cloudy-day.png");
+  opacity: 0.35;
+  animation: floatClouds 120s linear infinite;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+@keyframes floatClouds {
+  from { background-position: 0 0; }
+  to { background-position: -2000px 0; }
+}
+
+.container {
+  position: relative;
+  width: 90vw;
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+}
+
+.navbar h1 {
+  font-size: 20px;
+  background: linear-gradient(90deg, #00ffff, #9b5de5, #00f5d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navsection {
+  display: flex;
+  gap: 20px;
+}
+
+.navsection a {
+  color: #e6edf3;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.navsection a.active {
+  color: #00ffff;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00ffff, #9b5de5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.content {
+  margin-top: 80px;
+  padding-bottom: 40px;
+  height: calc(100% - 80px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maintag {
+  text-align: center;
+  margin-top: 10px;
+  max-width: 700px;
+  position: relative;
+  z-index: 5;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.maintag h1 {
+  font-size: 28px;
+  background: linear-gradient(90deg, #00ffff, #9b5de5, #00f5d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+.maintag p {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 8px;
+}
+
+.uploadsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 160px;
+  border: 2px dashed rgba(0, 255, 255, 0.5);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  color: #e6edf3;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 60px;
+  font-size: 10px;
+}
+
+.uploadsection:hover {
+  background: rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  border-color: #00ffff;
+  transform: scale(1.02);
+}
+
+.uploadsection h1 {
+  font-size: 15px;
+}
+
+.single-card {
+  margin-top: 70px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 85%;
+  max-width: 800px;
+  padding: 30px;
+  backdrop-filter: blur(15px);
+  color: #e6edf3;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.single-card.show {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+.single-card h2 {
+  font-size: 22px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.single-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .maintag h1 {
+    font-size: 22px;
+  }
+  .uploadsection {
+    width: 85%;
+    height: 140px;
+  }
+  .single-card {
+    width: 90%;
+    padding: 20px;
+  }
+}

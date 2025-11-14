@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingredient Analyzer</title>
+  <link rel="stylesheet" href="./ia.css" />
+</head>
+<body>
+  <div class="ocean"></div>
+  <div class="clouds"></div>
+
+  <div class="container">
+    <nav class="navbar">
+      <h1>IngredientAnalyzer</h1>
+      <div class="navsection">
+        <a href="#" data-page="home" class="active">Home</a>
+        <a href="#" data-page="features">Features</a>
+        <a href="#" data-page="analyze">Analyze</a>
+      </div>
+      <button class="btn">Get Started</button>
+    </nav>
+
+    <main class="content">
+      <section class="maintag" id="maintag">
+        <h1>Analyze Ingredients with <strong>AI Precision</strong></h1>
+        <p>Upload your product label & instantly detect harmful, moderate, or safe</p>
+        <p>ingredients — powered by AI and OCR</p>
+        <button class="btn">Start Analyzing</button>
+      </section>
+
+      <div class="maintag">
+        <h1>Analyze Ingredients with <strong>AI Precision</strong></h1>
+        <p>Upload your product label & instantly detect harmful, moderate, or safe</p>
+        <p>ingredients — powered by AI and OCR</p>
+        <button class="btn">Start Analyzing</button>
+      </div>
+
+      <label class="uploadsection" for="fileUpload" id="uploadLabel">
+        <input type="file" id="fileUpload" accept="image/png, image/jpeg, image/bmp" hidden>
+        <div class="upload-inner">
+          <div class="upload-icon">+</div>
+          <h1>Upload Product Image</h1>
+          <p>Drag & Drop or Click to Upload</p>
+          <p>JPG, PNG, BMP — Max 10MB</p>
+        </div>
+      </label>
+
+      <section class="single-card" id="singleCard"></section>
+    </main>
+  </div>
+
+  <script src="./ia.js"></script>
+</body>
+</html>
